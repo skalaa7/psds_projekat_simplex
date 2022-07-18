@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 18 10:32:34 2022
+# Process ID: 15464
+# Current directory: C:/Users/Andrej/Desktop/GithubProjekat/psds_projekat_simplex/Simplex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14760 C:\Users\Andrej\Desktop\GithubProjekat\psds_projekat_simplex\Simplex\Simplex.xpr
+# Log file: C:/Users/Andrej/Desktop/GithubProjekat/psds_projekat_simplex/Simplex/vivado.log
+# Journal file: C:/Users/Andrej/Desktop/GithubProjekat/psds_projekat_simplex/Simplex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Andrej/Desktop/GithubProjekat/psds_projekat_simplex/Simplex/Simplex.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Andrej/VHDL_projects/Simplex' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Andrej/Desktop/GithubProjekat/psds_projekat_simplex/ip_repo/PIVOT_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:14 . Memory (MB): peak = 1143.344 ; gain = 0.000

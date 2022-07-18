@@ -1,0 +1,7 @@
+Running: xsim.dir/top_pivot_tb_behav/xsimk.exe -simmode gui -wdb top_pivot_tb_behav.wdb -simrunnum 0 -socket 62114
+Design successfully loaded
+Design Loading Memory Usage: 11948 KB (Peak: 11948 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 21528 KB (Peak: 21528 KB)
+Simulation CPU Usage: 4374 ms

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 11 19:06:13 2022
+# Process ID: 14988
+# Current directory: C:/Users/Andrej/VHDL_projects/delitelj/najnoviji/project_7/project_7.runs/synth_1
+# Command line: vivado.exe -log top_pivot.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_pivot.tcl
+# Log file: C:/Users/Andrej/VHDL_projects/delitelj/najnoviji/project_7/project_7.runs/synth_1/top_pivot.vds
+# Journal file: C:/Users/Andrej/VHDL_projects/delitelj/najnoviji/project_7/project_7.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_pivot.tcl -notrace
