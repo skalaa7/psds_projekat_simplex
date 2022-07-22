@@ -1,8 +1,8 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Mon Jul 11 19:52:00 2022
---Host        : DESKTOP-POC374B running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+--Date        : Fri Jul 22 11:01:18 2022
+--Host        : LabUbuLenovo running 64-bit Ubuntu 20.04.1 LTS
 --Command     : generate_target simplex.bd
 --Design      : simplex
 --Purpose     : IP block netlist
@@ -44,7 +44,27 @@ end simplex;
 architecture STRUCTURE of simplex is
   component simplex_processing_system7_0_0 is
   port (
+    I2C0_SDA_I : in STD_LOGIC;
+    I2C0_SDA_O : out STD_LOGIC;
+    I2C0_SDA_T : out STD_LOGIC;
+    I2C0_SCL_I : in STD_LOGIC;
+    I2C0_SCL_O : out STD_LOGIC;
+    I2C0_SCL_T : out STD_LOGIC;
     SDIO0_WP : in STD_LOGIC;
+    SPI0_SCLK_I : in STD_LOGIC;
+    SPI0_SCLK_O : out STD_LOGIC;
+    SPI0_SCLK_T : out STD_LOGIC;
+    SPI0_MOSI_I : in STD_LOGIC;
+    SPI0_MOSI_O : out STD_LOGIC;
+    SPI0_MOSI_T : out STD_LOGIC;
+    SPI0_MISO_I : in STD_LOGIC;
+    SPI0_MISO_O : out STD_LOGIC;
+    SPI0_MISO_T : out STD_LOGIC;
+    SPI0_SS_I : in STD_LOGIC;
+    SPI0_SS_O : out STD_LOGIC;
+    SPI0_SS1_O : out STD_LOGIC;
+    SPI0_SS2_O : out STD_LOGIC;
+    SPI0_SS_T : out STD_LOGIC;
     TTC0_WAVE0_OUT : out STD_LOGIC;
     TTC0_WAVE1_OUT : out STD_LOGIC;
     TTC0_WAVE2_OUT : out STD_LOGIC;
@@ -166,7 +186,7 @@ architecture STRUCTURE of simplex is
     bram_rddata_b : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component simplex_axi_bram_ctrl_0_0;
-  component simplex_PIVOT_0_1 is
+  component simplex_PIVOT_0_0 is
   port (
     en : in STD_LOGIC;
     we : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -195,7 +215,7 @@ architecture STRUCTURE of simplex is
     s00_axi_rvalid : out STD_LOGIC;
     s00_axi_rready : in STD_LOGIC
   );
-  end component simplex_PIVOT_0_1;
+  end component simplex_PIVOT_0_0;
   component simplex_axi_smc_0 is
   port (
     aclk : in STD_LOGIC;
@@ -433,6 +453,20 @@ architecture STRUCTURE of simplex is
   signal NLW_axi_bram_ctrl_0_bram_wrdata_b_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_axi_smc_M00_AXI_arqos_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_axi_smc_M00_AXI_awqos_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_processing_system7_0_I2C0_SCL_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_processing_system7_0_I2C0_SCL_T_UNCONNECTED : STD_LOGIC;
+  signal NLW_processing_system7_0_I2C0_SDA_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_processing_system7_0_I2C0_SDA_T_UNCONNECTED : STD_LOGIC;
+  signal NLW_processing_system7_0_SPI0_MISO_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_processing_system7_0_SPI0_MISO_T_UNCONNECTED : STD_LOGIC;
+  signal NLW_processing_system7_0_SPI0_MOSI_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_processing_system7_0_SPI0_MOSI_T_UNCONNECTED : STD_LOGIC;
+  signal NLW_processing_system7_0_SPI0_SCLK_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_processing_system7_0_SPI0_SCLK_T_UNCONNECTED : STD_LOGIC;
+  signal NLW_processing_system7_0_SPI0_SS1_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_processing_system7_0_SPI0_SS2_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_processing_system7_0_SPI0_SS_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_processing_system7_0_SPI0_SS_T_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_TTC0_WAVE0_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_TTC0_WAVE1_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_TTC0_WAVE2_OUT_UNCONNECTED : STD_LOGIC;
@@ -468,7 +502,7 @@ architecture STRUCTURE of simplex is
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
 begin
-PIVOT_0: component simplex_PIVOT_0_1
+PIVOT_0: component simplex_PIVOT_0_0
      port map (
       addr(12 downto 0) => axi_bram_ctrl_0_bram_addr_a(12 downto 0),
       din(31 downto 0) => axi_bram_ctrl_0_bram_wrdata_a(31 downto 0),
@@ -663,6 +697,12 @@ processing_system7_0: component simplex_processing_system7_0_0
       DDR_WEB => DDR_we_n,
       FCLK_CLK0 => processing_system7_0_FCLK_CLK0,
       FCLK_RESET0_N => processing_system7_0_FCLK_RESET0_N,
+      I2C0_SCL_I => '0',
+      I2C0_SCL_O => NLW_processing_system7_0_I2C0_SCL_O_UNCONNECTED,
+      I2C0_SCL_T => NLW_processing_system7_0_I2C0_SCL_T_UNCONNECTED,
+      I2C0_SDA_I => '0',
+      I2C0_SDA_O => NLW_processing_system7_0_I2C0_SDA_O_UNCONNECTED,
+      I2C0_SDA_T => NLW_processing_system7_0_I2C0_SDA_T_UNCONNECTED,
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
       M_AXI_GP0_ACLK => processing_system7_0_FCLK_CLK0,
       M_AXI_GP0_ARADDR(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),
@@ -707,6 +747,20 @@ processing_system7_0: component simplex_processing_system7_0_0
       PS_PORB => FIXED_IO_ps_porb,
       PS_SRSTB => FIXED_IO_ps_srstb,
       SDIO0_WP => '0',
+      SPI0_MISO_I => '0',
+      SPI0_MISO_O => NLW_processing_system7_0_SPI0_MISO_O_UNCONNECTED,
+      SPI0_MISO_T => NLW_processing_system7_0_SPI0_MISO_T_UNCONNECTED,
+      SPI0_MOSI_I => '0',
+      SPI0_MOSI_O => NLW_processing_system7_0_SPI0_MOSI_O_UNCONNECTED,
+      SPI0_MOSI_T => NLW_processing_system7_0_SPI0_MOSI_T_UNCONNECTED,
+      SPI0_SCLK_I => '0',
+      SPI0_SCLK_O => NLW_processing_system7_0_SPI0_SCLK_O_UNCONNECTED,
+      SPI0_SCLK_T => NLW_processing_system7_0_SPI0_SCLK_T_UNCONNECTED,
+      SPI0_SS1_O => NLW_processing_system7_0_SPI0_SS1_O_UNCONNECTED,
+      SPI0_SS2_O => NLW_processing_system7_0_SPI0_SS2_O_UNCONNECTED,
+      SPI0_SS_I => '0',
+      SPI0_SS_O => NLW_processing_system7_0_SPI0_SS_O_UNCONNECTED,
+      SPI0_SS_T => NLW_processing_system7_0_SPI0_SS_T_UNCONNECTED,
       TTC0_WAVE0_OUT => NLW_processing_system7_0_TTC0_WAVE0_OUT_UNCONNECTED,
       TTC0_WAVE1_OUT => NLW_processing_system7_0_TTC0_WAVE1_OUT_UNCONNECTED,
       TTC0_WAVE2_OUT => NLW_processing_system7_0_TTC0_WAVE2_OUT_UNCONNECTED,

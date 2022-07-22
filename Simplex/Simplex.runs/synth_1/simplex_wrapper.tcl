@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Andrej/VHDL_projects/Simplex/Simplex.runs/synth_1/simplex_wrapper.tcl"
+  variable script "/home/student/Git/psds_projekat_simplex/Simplex/Simplex.runs/synth_1/simplex_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -77,53 +77,53 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Andrej/VHDL_projects/Simplex/Simplex.cache/wt [current_project]
-set_property parent.project_path C:/Users/Andrej/VHDL_projects/Simplex/Simplex.xpr [current_project]
+set_property webtalk.parent_dir /home/student/Git/psds_projekat_simplex/Simplex/Simplex.cache/wt [current_project]
+set_property parent.project_path /home/student/Git/psds_projekat_simplex/Simplex/Simplex.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo:part0:2.0 [current_project]
-set_property ip_repo_paths c:/Users/Andrej/VHDL_projects/ip_repo/PIVOT_1.0 [current_project]
+set_property ip_repo_paths /home/student/Git/psds_projekat_simplex/ip_repo/PIVOT_1.0 [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/Andrej/VHDL_projects/Simplex/Simplex.cache/ip [current_project]
+set_property ip_output_repo /home/student/Git/psds_projekat_simplex/Simplex/Simplex.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/hdl/simplex_wrapper.vhd
-add_files C:/Users/Andrej/VHDL_projects/Simplex/Simplex.srcs/sources_1/bd/simplex/simplex.bd
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_processing_system7_0_0/simplex_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_bram_ctrl_0_0/simplex_axi_bram_ctrl_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_PIVOT_0_1/src/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_1/bd_dcce_psr_aclk_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_1/bd_dcce_psr_aclk_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_2/bd_dcce_arsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_3/bd_dcce_rsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_4/bd_dcce_awsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_5/bd_dcce_wsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_6/bd_dcce_bsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_10/bd_dcce_s00a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_11/bd_dcce_sarn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_12/bd_dcce_srn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_13/bd_dcce_sawn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_14/bd_dcce_swn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_15/bd_dcce_sbn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_16/bd_dcce_m00s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_17/bd_dcce_m00arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_18/bd_dcce_m00rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_19/bd_dcce_m00awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_20/bd_dcce_m00wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_21/bd_dcce_m00bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_23/bd_dcce_m01s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_24/bd_dcce_m01arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_25/bd_dcce_m01rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_26/bd_dcce_m01awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_27/bd_dcce_m01wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/bd_0/ip/ip_28/bd_dcce_m01bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0/ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_rst_ps7_0_100M_0/simplex_rst_ps7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_rst_ps7_0_100M_0/simplex_rst_ps7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_rst_ps7_0_100M_0/simplex_rst_ps7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Andrej/VHDL_projects/Simplex/Simplex.gen/sources_1/bd/simplex/simplex_ooc.xdc]
+read_vhdl -library xil_defaultlib /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/hdl/simplex_wrapper.vhd
+add_files /home/student/Git/psds_projekat_simplex/Simplex/Simplex.srcs/sources_1/bd/simplex/simplex.bd
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_processing_system7_0_0_1/simplex_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_bram_ctrl_0_0_1/simplex_axi_bram_ctrl_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_PIVOT_0_0/src/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_1/bd_dcce_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_1/bd_dcce_psr_aclk_0.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_2/bd_dcce_arsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_3/bd_dcce_rsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_4/bd_dcce_awsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_5/bd_dcce_wsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_6/bd_dcce_bsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_10/bd_dcce_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_11/bd_dcce_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_12/bd_dcce_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_13/bd_dcce_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_14/bd_dcce_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_15/bd_dcce_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_16/bd_dcce_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_17/bd_dcce_m00arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_18/bd_dcce_m00rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_19/bd_dcce_m00awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_20/bd_dcce_m00wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_21/bd_dcce_m00bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_23/bd_dcce_m01s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_24/bd_dcce_m01arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_25/bd_dcce_m01rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_26/bd_dcce_m01awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_27/bd_dcce_m01wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/bd_0/ip/ip_28/bd_dcce_m01bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_axi_smc_0_1/ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_rst_ps7_0_100M_0_1/simplex_rst_ps7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_rst_ps7_0_100M_0_1/simplex_rst_ps7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/ip/simplex_rst_ps7_0_100M_0_1/simplex_rst_ps7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/student/Git/psds_projekat_simplex/Simplex/Simplex.gen/sources_1/bd/simplex/simplex_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

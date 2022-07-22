@@ -87,7 +87,7 @@
       "processing_system7_0": {
         "vlnv": "xilinx.com:ip:processing_system7:5.5",
         "xci_name": "simplex_processing_system7_0_0",
-        "xci_path": "ip\\simplex_processing_system7_0_0\\simplex_processing_system7_0_0.xci",
+        "xci_path": "ip/simplex_processing_system7_0_0_1/simplex_processing_system7_0_0.xci",
         "inst_hier_path": "processing_system7_0",
         "parameters": {
           "PCW_ACT_APU_PERIPHERAL_FREQMHZ": {
@@ -139,7 +139,7 @@
             "value": "10.000000"
           },
           "PCW_ACT_SPI_PERIPHERAL_FREQMHZ": {
-            "value": "10.000000"
+            "value": "166.666672"
           },
           "PCW_ACT_TPIU_PERIPHERAL_FREQMHZ": {
             "value": "200.000000"
@@ -346,7 +346,7 @@
             "value": "0"
           },
           "PCW_EN_EMIO_I2C0": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_EN_EMIO_I2C1": {
             "value": "0"
@@ -367,7 +367,7 @@
             "value": "0"
           },
           "PCW_EN_EMIO_SPI0": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_EN_EMIO_SPI1": {
             "value": "0"
@@ -409,7 +409,7 @@
             "value": "1"
           },
           "PCW_EN_I2C0": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_EN_I2C1": {
             "value": "0"
@@ -454,7 +454,7 @@
             "value": "0"
           },
           "PCW_EN_SPI0": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_EN_SPI1": {
             "value": "0"
@@ -549,17 +549,29 @@
           "PCW_GPIO_PERIPHERAL_ENABLE": {
             "value": "0"
           },
+          "PCW_I2C0_I2C0_IO": {
+            "value": "EMIO"
+          },
           "PCW_I2C0_PERIPHERAL_ENABLE": {
+            "value": "1"
+          },
+          "PCW_I2C0_RESET_ENABLE": {
             "value": "0"
           },
           "PCW_I2C1_PERIPHERAL_ENABLE": {
             "value": "0"
+          },
+          "PCW_I2C_PERIPHERAL_FREQMHZ": {
+            "value": "108.333336"
           },
           "PCW_I2C_RESET_ENABLE": {
             "value": "1"
           },
           "PCW_I2C_RESET_POLARITY": {
             "value": "Active Low"
+          },
+          "PCW_I2C_RESET_SELECT": {
+            "value": "Share reset pin"
           },
           "PCW_IMPORT_BOARD_PRESET": {
             "value": "None"
@@ -1318,7 +1330,10 @@
             "value": "0"
           },
           "PCW_SPI0_PERIPHERAL_ENABLE": {
-            "value": "0"
+            "value": "1"
+          },
+          "PCW_SPI0_SPI0_IO": {
+            "value": "EMIO"
           },
           "PCW_SPI1_PERIPHERAL_ENABLE": {
             "value": "0"
@@ -1326,8 +1341,11 @@
           "PCW_SPI_PERIPHERAL_CLKSRC": {
             "value": "IO PLL"
           },
+          "PCW_SPI_PERIPHERAL_FREQMHZ": {
+            "value": "166.666666"
+          },
           "PCW_SPI_PERIPHERAL_VALID": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_TPIU_PERIPHERAL_CLKSRC": {
             "value": "External"
@@ -1861,19 +1879,19 @@
       "axi_bram_ctrl_0": {
         "vlnv": "xilinx.com:ip:axi_bram_ctrl:4.1",
         "xci_name": "simplex_axi_bram_ctrl_0_0",
-        "xci_path": "ip\\simplex_axi_bram_ctrl_0_0\\simplex_axi_bram_ctrl_0_0.xci",
+        "xci_path": "ip/simplex_axi_bram_ctrl_0_0_1/simplex_axi_bram_ctrl_0_0.xci",
         "inst_hier_path": "axi_bram_ctrl_0"
       },
       "PIVOT_0": {
         "vlnv": "xilinx.com:user:PIVOT:1.0",
-        "xci_name": "simplex_PIVOT_0_1",
-        "xci_path": "ip\\simplex_PIVOT_0_1\\simplex_PIVOT_0_1.xci",
+        "xci_name": "simplex_PIVOT_0_0",
+        "xci_path": "ip/simplex_PIVOT_0_0/simplex_PIVOT_0_0.xci",
         "inst_hier_path": "PIVOT_0"
       },
       "axi_smc": {
         "vlnv": "xilinx.com:ip:smartconnect:1.0",
         "xci_name": "simplex_axi_smc_0",
-        "xci_path": "ip\\simplex_axi_smc_0\\simplex_axi_smc_0.xci",
+        "xci_path": "ip/simplex_axi_smc_0_1/simplex_axi_smc_0.xci",
         "inst_hier_path": "axi_smc",
         "parameters": {
           "NUM_MI": {
@@ -1962,7 +1980,7 @@
       "rst_ps7_0_100M": {
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
         "xci_name": "simplex_rst_ps7_0_100M_0",
-        "xci_path": "ip\\simplex_rst_ps7_0_100M_0\\simplex_rst_ps7_0_100M_0.xci",
+        "xci_path": "ip/simplex_rst_ps7_0_100M_0_1/simplex_rst_ps7_0_100M_0.xci",
         "inst_hier_path": "rst_ps7_0_100M"
       }
     },

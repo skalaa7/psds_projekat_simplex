@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/Andrej/VHDL_projects/Simplex/Simplex.runs/impl_1/simplex_wrapper.tcl"
+  variable script "/home/student/Git/psds_projekat_simplex/Simplex/Simplex.runs/impl_1/simplex_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -122,7 +122,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 2
+  set_param chipscope.maxJobs 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z010clg400-1
   set_property board_part digilentinc.com:zybo:part0:2.0 [current_project]
@@ -130,19 +130,19 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/Andrej/VHDL_projects/Simplex/Simplex.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Andrej/VHDL_projects/Simplex/Simplex.xpr [current_project]
-  set_property ip_repo_paths C:/Users/Andrej/VHDL_projects/ip_repo/PIVOT_1.0 [current_project]
+  set_property webtalk.parent_dir /home/student/Git/psds_projekat_simplex/Simplex/Simplex.cache/wt [current_project]
+  set_property parent.project_path /home/student/Git/psds_projekat_simplex/Simplex/Simplex.xpr [current_project]
+  set_property ip_repo_paths /home/student/Git/psds_projekat_simplex/ip_repo/PIVOT_1.0 [current_project]
   update_ip_catalog
-  set_property ip_output_repo C:/Users/Andrej/VHDL_projects/Simplex/Simplex.cache/ip [current_project]
+  set_property ip_output_repo /home/student/Git/psds_projekat_simplex/Simplex/Simplex.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/Andrej/VHDL_projects/Simplex/Simplex.runs/synth_1/simplex_wrapper.dcp
+  add_files -quiet /home/student/Git/psds_projekat_simplex/Simplex/Simplex.runs/synth_1/simplex_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Users/Andrej/VHDL_projects/Simplex/Simplex.srcs/sources_1/bd/simplex/simplex.bd
+  add_files /home/student/Git/psds_projekat_simplex/Simplex/Simplex.srcs/sources_1/bd/simplex/simplex.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
 OPTRACE "read constraints: implementation" END { }

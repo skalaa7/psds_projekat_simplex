@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2020.2 (64-bit)
-# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Jul 11 19:59:20 2022
-# Process ID: 5964
-# Current directory: C:/Users/Andrej/VHDL_projects/Simplex/Simplex.runs/impl_1
-# Command line: vivado.exe -log simplex_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source simplex_wrapper.tcl -notrace
-# Log file: C:/Users/Andrej/VHDL_projects/Simplex/Simplex.runs/impl_1/simplex_wrapper.vdi
-# Journal file: C:/Users/Andrej/VHDL_projects/Simplex/Simplex.runs/impl_1\vivado.jou
+# Start of session at: Fri Jul 22 11:03:16 2022
+# Process ID: 6283
+# Current directory: /home/student/Git/psds_projekat_simplex/Simplex/Simplex.runs/impl_1
+# Command line: vivado -log simplex_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source simplex_wrapper.tcl -notrace
+# Log file: /home/student/Git/psds_projekat_simplex/Simplex/Simplex.runs/impl_1/simplex_wrapper.vdi
+# Journal file: /home/student/Git/psds_projekat_simplex/Simplex/Simplex.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source simplex_wrapper.tcl -notrace

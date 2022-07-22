@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2020.2 (64-bit)
-# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Jul 11 19:54:27 2022
-# Process ID: 9980
-# Current directory: C:/Users/Andrej/VHDL_projects/Simplex/Simplex.runs/simplex_processing_system7_0_0_synth_1
-# Command line: vivado.exe -log simplex_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source simplex_processing_system7_0_0.tcl
-# Log file: C:/Users/Andrej/VHDL_projects/Simplex/Simplex.runs/simplex_processing_system7_0_0_synth_1/simplex_processing_system7_0_0.vds
-# Journal file: C:/Users/Andrej/VHDL_projects/Simplex/Simplex.runs/simplex_processing_system7_0_0_synth_1\vivado.jou
+# Start of session at: Fri Jul 22 11:01:55 2022
+# Process ID: 5885
+# Current directory: /home/student/Git/psds_projekat_simplex/Simplex/Simplex.runs/simplex_processing_system7_0_0_synth_1
+# Command line: vivado -log simplex_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source simplex_processing_system7_0_0.tcl
+# Log file: /home/student/Git/psds_projekat_simplex/Simplex/Simplex.runs/simplex_processing_system7_0_0_synth_1/simplex_processing_system7_0_0.vds
+# Journal file: /home/student/Git/psds_projekat_simplex/Simplex/Simplex.runs/simplex_processing_system7_0_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source simplex_processing_system7_0_0.tcl -notrace

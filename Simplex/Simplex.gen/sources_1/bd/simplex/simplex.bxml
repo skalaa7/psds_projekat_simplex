@@ -2,17 +2,17 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="simplex" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1657561957"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1657561957"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1657561957"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1657561957"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1658480498"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1658480498"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1658480498"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1658480498"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="synth\simplex.vhd" Type="VHDL">
+      <File Name="synth/simplex.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
       </File>
-      <File Name="sim\simplex.vhd" Type="VHDL">
+      <File Name="sim/simplex.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
@@ -24,7 +24,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="OUT_OF_CONTEXT"/>
       </File>
-      <File Name="hw_handoff\simplex.hwh" Type="HwHandoff">
+      <File Name="hw_handoff/simplex.hwh" Type="HwHandoff">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>
@@ -34,17 +34,17 @@
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>
       </File>
-      <File Name="hw_handoff\simplex_bd.tcl">
+      <File Name="hw_handoff/simplex_bd.tcl">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>
       </File>
-      <File Name="synth\simplex.hwdef">
+      <File Name="synth/simplex.hwdef">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>
       </File>
-      <File Name="sim\simplex.protoinst">
+      <File Name="sim/simplex.protoinst">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
